@@ -7,7 +7,7 @@ Tables:
  + races with biggest changes
  + highest rating at the end of rookie season (= first season with at least 7 sessions) / highest average rating over rookie season
 Charts:
- + rolling average and deviation of rankings (average of averages groupped by driver)
+ + rolling average and deviation of rankings (average of averages grouped by driver)
  + average ranking at the beginning and the end of each championship season (first and last championship races)
  + peak season ranking (MAX peak rating, MIN bottom rating, AVG average, STDDEV average GROUP BY YEAR(date), _driver)
  + top 3 of every season (on average) by half-decade
