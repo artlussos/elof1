@@ -13,6 +13,18 @@ INSERT INTO `races` VALUES(2689, '2020 British Grand Prix - qualifying', '2020-0
 INSERT INTO `races` VALUES(2690, '2020 British Grand Prix', '2020-08-02', 0, 4);
 INSERT INTO `races` VALUES(2691, '2020 70th Grand Prix - qualifying', '2020-08-08', 0, 3);
 INSERT INTO `races` VALUES(2692, '2020 70th Grand Prix', '2020-08-09', 0, 4);
+INSERT INTO `races` VALUES(2693, '2020 Tuscan Grand Prix - qualifying',  '2020-09-12', 0, 3);
+INSERT INTO `races` VALUES(2694, '2020 Tuscan Grand Prix',  '2020-09-13', 0, 4);
+INSERT INTO `races` VALUES(2695, '2020 Russian Grand Prix - qualifying','2020-09-26', 0, 3);
+INSERT INTO `races` VALUES(2696, '2020 Russian Grand Prix','2020-09-27', 0, 4);
+INSERT INTO `races` VALUES(2697, '2020 Eifel Grand Prix - qualifying', '2020-10-10', 0, 4);
+INSERT INTO `races` VALUES(2698, '2020 Eifel Grand Prix', '2020-10-11', 0, 4);
+INSERT INTO `races` VALUES(2699, '2020 Portuguese Grand Prix - qualifying', '2020-10-24', 0, 3);
+INSERT INTO `races` VALUES(2700, '2020 Portuguese Grand Prix', '2020-10-25', 0, 4);
+INSERT INTO `races` VALUES(2701, '2020 Emilia Romagna Grand Prix - qualifying','2020-10-31', 0, 3);
+INSERT INTO `races` VALUES(2702, '2020 Emilia Romagna Grand Prix','2020-11-01', 0, 4);
+
+
 
 INSERT INTO `countries` VALUES(1, 'France');
 INSERT INTO `countries` VALUES(2, 'Monaco');
@@ -39,7 +51,7 @@ INSERT INTO `drivers` VALUES(1157, 'Daniel Ricciardo', 18);
 INSERT INTO `drivers` VALUES(1161, 'Valtteri Bottas', 30);
 INSERT INTO `drivers` VALUES(1165, 'Kevin Magnussen', 28);
 INSERT INTO `drivers` VALUES(1166, 'Daniil Kvyat', 10);
-INSERT INTO `drivers` VALUES(1170, 'Carlos Sainz', 14);
+INSERT INTO `drivers` VALUES(1170, 'Carlos Sainz Jr.', 14);
 INSERT INTO `drivers` VALUES(1172, 'Max Verstappen', 5);
 INSERT INTO `drivers` VALUES(1179, 'Esteban Ocon', 1);
 INSERT INTO `drivers` VALUES(1180, 'Antonio Giovinazzi', 3);
