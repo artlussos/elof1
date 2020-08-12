@@ -23,7 +23,7 @@ class Interface(object):
             Base.metadata.drop_all(self.session.get_bind())
         Base.metadata.create_all(self.session.get_bind())
         with open(path.join(path.dirname(__main__.__file__),
-                            'sql', 'results.sql')) as result_dump:
+                            'sql', 'results-2020.sql')) as result_dump:
             for line in result_dump.readlines():
                 line = line.strip()
                 if line and line[0:2] != '--':
