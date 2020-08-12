@@ -6,17 +6,17 @@ This application allows to apply Elo-like rankings to Formula One races.
 Requirements
 ============
 
- * python 2.x (developed and tested on 2.7.8)
- * SQLAlchemy
- * PySQLite (optional)
- * MySQL connector for python (optional)
- * dateutil
+* python 2.x (developed and tested on 2.7.8)
+* SQLAlchemy
+* PySQLite (optional)
+* MySQL connector for python (optional)
+* dateutil
 
 Import scripts use some additional libraries, such as:
 
- * BeautifulSoup4
- * lxml
- * urllib, urllib2, urlparse
+* BeautifulSoup4
+* lxml
+* urllib, urllib2, urlparse
 
 You can use the application with either SQLite database or MySQL database (in that case you, well, need a MySQL database).
 
@@ -75,23 +75,23 @@ Elo parameters
 
 `elo.json` contains algorithm parameter for Elo ratings:
 
- * initial driver ranking
- * algorithm disparity options
- * algorithm importance for distinct race types (championship/non-championship, qualifying/race)
- * algorithm importance thresholds
+* initial driver ranking
+* algorithm disparity options
+* algorithm importance for distinct race types (championship/non-championship, qualifying/race)
+* algorithm importance thresholds
 
-Remember that any change to parameters should lead to ranking reset (`./elo.py reset; ./elo.py rate`) if you want consistent rating criteria throughout the entires time span of results database.
+Remember that any change to parameters should lead to ranking reset (`./elo.py reset; ./elo.py rate`) if you want consistent rating criteria throughout the entire time span of results database.
 
 More information
 ================
 
 More elaborate write-up of the methodology and general approach to the problem can be found in the doc/ directory of source code repository, which contains:
 
- * races.md: explanation of race selection for the results database
- * results.md: summary of the scoring method
- * sources.md: summary of sources used for result data
- * challenges.md: two most dificult aspects of the project, described in detail
- * sql.md: useful or interesting queries to be run against the database (may only be applicable to the MySQL database)
+* races.md: explanation of race selection for the results database
+* results.md: summary of the scoring method
+* sources.md: summary of sources used for result data
+* challenges.md: two most difficult aspects of the project, described in detail
+* sql.md: useful or interesting queries to be run against the database (may only be applicable to the MySQL database)
 
 Author
 ======
