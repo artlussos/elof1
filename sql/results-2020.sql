@@ -11,8 +11,8 @@ INSERT INTO `races` VALUES(2687, '2020 Hungarian Grand Prix - qualifying', '2020
 INSERT INTO `races` VALUES(2688, '2020 Hungarian Grand Prix', '2020-07-19', 0, 4);
 INSERT INTO `races` VALUES(2689, '2020 British Grand Prix - qualifying', '2020-08-01', 0, 3);
 INSERT INTO `races` VALUES(2690, '2020 British Grand Prix', '2020-08-02', 0, 4);
-INSERT INTO `races` VALUES(2691, '2020 70th Grand Prix - qualifying', '2020-08-08', 0, 3);
-INSERT INTO `races` VALUES(2692, '2020 70th Grand Prix', '2020-08-09', 0, 4);
+INSERT INTO `races` VALUES(2691, '2020 70th Anniversary Grand Prix - qualifying', '2020-08-08', 0, 3);
+INSERT INTO `races` VALUES(2692, '2020 70th Anniversary Grand Prix', '2020-08-09', 0, 4);
 INSERT INTO `races` VALUES(2693, '2020 Tuscan Grand Prix - qualifying',  '2020-09-12', 0, 3);
 INSERT INTO `races` VALUES(2694, '2020 Tuscan Grand Prix',  '2020-09-13', 0, 4);
 INSERT INTO `races` VALUES(2695, '2020 Russian Grand Prix - qualifying','2020-09-26', 0, 3);
@@ -23,7 +23,6 @@ INSERT INTO `races` VALUES(2699, '2020 Portuguese Grand Prix - qualifying', '202
 INSERT INTO `races` VALUES(2700, '2020 Portuguese Grand Prix', '2020-10-25', 0, 4);
 INSERT INTO `races` VALUES(2701, '2020 Emilia Romagna Grand Prix - qualifying','2020-10-31', 0, 3);
 INSERT INTO `races` VALUES(2702, '2020 Emilia Romagna Grand Prix','2020-11-01', 0, 4);
-
 
 
 INSERT INTO `countries` VALUES(1, 'France');
@@ -183,7 +182,7 @@ INSERT INTO `entries` VALUES(57639, '17', 99, 4, 2688);
 INSERT INTO `entries` VALUES(57640, '18', 63, 4, 2688);
 INSERT INTO `entries` VALUES(57641, '19', 6, 5, 2688);
 INSERT INTO `entries` VALUES(57642, 'R', 10, 0, 2688);
--- 2020 British
+-- 2020 British Grand Prix
 INSERT INTO `entries` VALUES(57643, "1", 44, 1, 2689);
 INSERT INTO `entries` VALUES(57644, "2", 77, 2, 2689);
 INSERT INTO `entries` VALUES(57645, "3", 33, 3, 2689);
@@ -224,7 +223,7 @@ INSERT INTO `entries` VALUES(57679, "17", 7, 6, 2690);
 INSERT INTO `entries` VALUES(57680, "R", 26, 7, 2690);
 INSERT INTO `entries` VALUES(57681, "R", 20, 7, 2690);
 INSERT INTO `entries` VALUES(57682, "W", 27, 0, 2690);
--- 70Th Anniversary Race
+-- 70th Anniversary Grand Prix
 INSERT INTO `entries` VALUES(57683, "1", 77, 1, 2691);
 INSERT INTO `entries` VALUES(57684, "2", 44, 2, 2691);
 INSERT INTO `entries` VALUES(57685, "3", 27, 3, 2691);
@@ -387,7 +386,7 @@ INSERT INTO `driver_entries` VALUES(1180, 57639, 57778);
 INSERT INTO `driver_entries` VALUES(1188, 57640, 57779);
 INSERT INTO `driver_entries` VALUES(1189, 57641, 57780);
 INSERT INTO `driver_entries` VALUES(1182, 57642, 57781);
--- 2020 British
+-- 2020 British Grand Prix
 INSERT INTO `driver_entries` VALUES(1140, 57643, 57782);
 INSERT INTO `driver_entries` VALUES(1161, 57644, 57783);
 INSERT INTO `driver_entries` VALUES(1172, 57645, 57784);
@@ -428,7 +427,7 @@ INSERT INTO `driver_entries` VALUES(1141, 57679, 57818);
 INSERT INTO `driver_entries` VALUES(1166, 57680, 57819);
 INSERT INTO `driver_entries` VALUES(1165, 57681, 57820);
 INSERT INTO `driver_entries` VALUES(1148, 57682, 57821);
--- 70Th Anniversary Race
+-- 70th Anniversary Grand Prix
 INSERT INTO `driver_entries` VALUES(1161, 57683, 57822);
 INSERT INTO `driver_entries` VALUES(1140, 57684, 57823);
 INSERT INTO `driver_entries` VALUES(1148, 57685, 57824);
