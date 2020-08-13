@@ -1,4 +1,5 @@
 DROP VIEW IF EXISTS champions;
+
 CREATE VIEW champions AS
 	SELECT championship.year, drivers.driver, championship.points
 	FROM championship
@@ -35,7 +36,7 @@ CREATE VIEW rookie_seasons AS
 	WHERE count > 6
 	GROUP BY _driver;
 
-DROP VIEW IF EXISTS `top_yearly_rankings`;
+DROP VIEW IF EXISTS top_yearly_rankings;
 
 CREATE VIEW top_yearly_rankings AS
 	SELECT MAX(max_ranking) peak, printf("%.2f", MAX(avg_ranking)) average, date
