@@ -62,3 +62,9 @@ CREATE VIEW top_peak_rankings AS
 		JOIN top_yearly_rankings ON strftime('%Y', rankings.rank_date) = top_yearly_rankings.date AND rankings.ranking = top_yearly_rankings.peak
 		JOIN drivers ON rankings._driver = drivers.id
 		JOIN driver_yearly_rankings ON rankings._driver = driver_yearly_rankings._driver AND top_yearly_rankings.date = driver_yearly_rankings.date;
+
+CREATE VIEW drivers_average_score AS
+	SELECT printf("%.2f", AVG(ranking)) as drivers_score, drivers.driver
+	FROM rankings
+		JOIN drivers on drivers.id = rankings._driver
+	GROUP BY drivers.driver
