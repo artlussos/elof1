@@ -10,7 +10,7 @@ Base = declarative_base()
 
 
 class Country(Base):
-    __tablename__ = 'countries'
+    __tablename__ = 'elo_f1_countries'
 
     id = Column(Integer, primary_key=True)
     name = Column(String(255), index=True)
@@ -32,7 +32,7 @@ class Country(Base):
 
 
 class Driver(Base):
-    __tablename__ = 'drivers'
+    __tablename__ = 'elo_f1_drivers'
 
     id = Column(Integer, primary_key=True)
     driver = Column(String(255), index=True)
@@ -40,7 +40,7 @@ class Driver(Base):
     _country = Column(
         Integer,
         ForeignKey(
-            'countries.id',
+            'elo_f1_countries.id',
             onupdate="CASCADE",
             ondelete="CASCADE"))
     country = relationship(
@@ -77,19 +77,19 @@ class Driver(Base):
         return driver
 
 
-driver_entry = Table('driver_entries', Base.metadata,
+driver_entry = Table('elo_f1_driver_entries', Base.metadata,
                      Column(
                          '_driver',
                          Integer,
                          ForeignKey(
-                             'drivers.id',
+                             'elo_f1_drivers.id',
                              onupdate="CASCADE",
                              ondelete="CASCADE")),
                      Column(
                          '_entry',
                          Integer,
                          ForeignKey(
-                             'entries.id',
+                             'elo_f1_entries.id',
                              onupdate="CASCADE",
                              ondelete="CASCADE")),
                      Column('id', Integer, primary_key=True))
@@ -97,7 +97,7 @@ driver_entry = Table('driver_entries', Base.metadata,
 
 @total_ordering
 class Entry(Base):
-    __tablename__ = 'entries'
+    __tablename__ = 'elo_f1_entries'
 
     id = Column(Integer, primary_key=True)
     result = Column(String(255))
@@ -107,7 +107,7 @@ class Entry(Base):
     _race = Column(
         Integer,
         ForeignKey(
-            'races.id',
+            'elo_f1_races.id',
             onupdate="CASCADE",
             ondelete="CASCADE"))
     race = relationship(
@@ -151,7 +151,7 @@ class Entry(Base):
 
 
 class Race(Base):
-    __tablename__ = 'races'
+    __tablename__ = 'elo_f1_races'
 
     id = Column(Integer, primary_key=True)
     race = Column(String(1024))
@@ -164,7 +164,7 @@ class Race(Base):
     _type = Column(
         Integer,
         ForeignKey(
-            'race_types.id',
+            'elo_f1_race_types.id',
             onupdate="CASCADE",
             ondelete="CASCADE"))
     type = relationship(
@@ -184,7 +184,7 @@ class Race(Base):
 
 
 class RaceType(Base):
-    __tablename__ = 'race_types'
+    __tablename__ = 'elo_f1_race_types'
 
     id = Column(Integer, primary_key=True)
     code = Column(String(255), index=True)
@@ -201,7 +201,7 @@ class RaceType(Base):
 
 
 class Ranking(Base):
-    __tablename__ = 'rankings'
+    __tablename__ = 'elo_f1_rankings'
 
     id = Column(Integer, primary_key=True)
     rank_date = Column(Date, index=True)
@@ -210,7 +210,7 @@ class Ranking(Base):
     _driver = Column(
         Integer,
         ForeignKey(
-            'drivers.id',
+            'elo_f1_drivers.id',
             onupdate="CASCADE",
             ondelete="CASCADE"))
     driver = relationship(
