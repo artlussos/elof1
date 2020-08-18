@@ -1,72 +1,72 @@
-DROP VIEW IF EXISTS champions;
+DROP VIEW IF EXISTS elo_f1_view_champions;
 
-CREATE VIEW champions AS
-	SELECT championship.year, drivers.driver, championship.points
-	FROM championship
-	JOIN drivers
-		ON drivers.id = championship._driver
-	WHERE championship.position = 1;
+CREATE VIEW elo_f1_view_champions AS
+    SELECT elo_f1_championship.year, elo_f1_drivers.driver, elo_f1_championship.points
+    FROM elo_f1_championship
+        JOIN elo_f1_drivers ON elo_f1_drivers.id = elo_f1_championship._driver
+    WHERE elo_f1_championship.position = 1;
 
-DROP VIEW IF EXISTS driver_seasons_count;
+DROP VIEW IF EXISTS elo_f1_view_driver_seasons_count;
 
-CREATE VIEW driver_seasons_count AS
-	SELECT strftime('%Y', rank_date) year, _driver, COUNT(rank_date) count
-	FROM rankings GROUP BY _driver, strftime('%Y', rank_date);
+CREATE VIEW elo_f1_view_driver_seasons_count AS
+    SELECT strftime('%Y', rank_date) year, _driver, COUNT(rank_date) count
+    FROM elo_f1_rankings GROUP BY _driver, strftime('%Y', rank_date);
 
-DROP VIEW IF EXISTS driver_yearly_rankings;
+DROP VIEW IF EXISTS elo_f1_view_driver_yearly_rankings;
 
-CREATE VIEW driver_yearly_rankings AS
-	SELECT printf("%.2f",MAX(rankings.ranking)) max_ranking,  printf("%.2f",AVG(rankings.ranking)) avg_ranking, MIN(rankings.ranking) min_ranking,
-           strftime('%Y', rankings.rank_date) date, COUNT(rankings.id) count, MIN(championship.position) position, rankings._driver
-	FROM rankings
-	LEFT JOIN championship ON rankings._driver = championship._driver AND strftime('%Y', rankings.rank_date) = championship.year
-	GROUP BY strftime('%Y', rankings.rank_date), rankings._driver;
+CREATE VIEW elo_f1_view_driver_yearly_rankings AS
+    SELECT MAX(elo_f1_rankings.ranking) max_ranking, FORMAT(AVG(elo_f1_rankings.ranking), 2) avg_ranking, MIN(elo_f1_rankings.ranking) min_ranking,
+        strftime('%Y', elo_f1_rankings.rank_date) date, COUNT(elo_f1_rankings.id) count, MIN(elo_f1_championship.position) position, elo_f1_rankings._driver
+    FROM elo_f1_rankings
+        LEFT JOIN elo_f1_championship ON elo_f1_rankings._driver = elo_f1_championship._driver AND strftime('%Y', elo_f1_rankings.rank_date) = elo_f1_championship.year
+    GROUP BY strftime('%Y', elo_f1_rankings.rank_date), elo_f1_rankings._driver;
 
-DROP VIEW IF EXISTS max_date_rankings;
+DROP VIEW IF EXISTS elo_f1_view_max_date_rankings;
 
-CREATE VIEW max_date_rankings AS
-	SELECT printf("%.2f",MAX(ranking)) max_ranking, rank_date max_rank_date
-	FROM rankings GROUP BY rank_date;
+CREATE VIEW elo_f1_view_max_date_rankings AS
+    SELECT MAX(ranking) max_ranking, rank_date max_rank_date
+    FROM elo_f1_rankings GROUP BY rank_date;
 
-DROP VIEW IF EXISTS rookie_seasons;
+DROP VIEW IF EXISTS elo_f1_view_rookie_seasons;
 
-CREATE VIEW rookie_seasons AS
-	SELECT MIN(year) year, _driver
-	FROM driver_seasons_count
-	WHERE count > 6
-	GROUP BY _driver;
+CREATE VIEW elo_f1_view_rookie_seasons AS
+    SELECT MIN(elo_f1_view_driver_seasons_count.year) year, _driver
+    FROM elo_f1_view_driver_seasons_count
+    WHERE count > 6
+    GROUP BY _driver;
 
-DROP VIEW IF EXISTS top_yearly_rankings;
+DROP VIEW IF EXISTS elo_f1_view_top_yearly_rankings;
 
-CREATE VIEW top_yearly_rankings AS
-	SELECT MAX(max_ranking) peak, printf("%.2f", MAX(avg_ranking)) average, date
-	FROM driver_yearly_rankings
-	WHERE count > 10
-	GROUP BY date;
+CREATE VIEW elo_f1_view_top_yearly_rankings AS
+    SELECT MAX(elo_f1_view_driver_yearly_rankings.max_ranking) peak, MAX(elo_f1_view_driver_yearly_rankings.avg_ranking) average, date
+    FROM elo_f1_view_driver_yearly_rankings
+    WHERE count > 10
+    GROUP BY date;
 
-DROP VIEW IF EXISTS top_average_rankings;
+DROP VIEW IF EXISTS elo_f1_view_top_average_rankings;
 
-CREATE VIEW top_average_rankings AS
-	SELECT top_yearly_rankings.date, drivers.driver, printf("%.2f", top_yearly_rankings.average) average, driver_yearly_rankings.position
-	FROM top_yearly_rankings
-		JOIN driver_yearly_rankings ON driver_yearly_rankings.avg_ranking = top_yearly_rankings.average
-			AND driver_yearly_rankings.date = top_yearly_rankings.date
-		JOIN drivers ON driver_yearly_rankings._driver = drivers.id
-	WHERE driver_yearly_rankings.count > 10;
+CREATE VIEW elo_f1_view_top_average_rankings AS
+    SELECT elo_f1_view_top_yearly_rankings.date, elo_f1_drivers.driver, elo_f1_view_top_yearly_rankings.average, elo_f1_view_driver_yearly_rankings.position
+    FROM elo_f1_view_top_yearly_rankings
+        JOIN elo_f1_view_driver_yearly_rankings ON elo_f1_view_driver_yearly_rankings.avg_ranking = elo_f1_view_top_yearly_rankings.average
+            AND elo_f1_view_driver_yearly_rankings.date = elo_f1_view_top_yearly_rankings.date
+        JOIN elo_f1_drivers ON elo_f1_view_driver_yearly_rankings._driver = elo_f1_drivers.id
+    WHERE elo_f1_view_driver_yearly_rankings.count > 10;
 
-DROP VIEW IF EXISTS top_peak_rankings;
+DROP VIEW IF EXISTS elo_f1_top_peak_rankings;
 
-CREATE VIEW top_peak_rankings AS
-	SELECT top_yearly_rankings.date, drivers.driver,  printf("%.2f", rankings.ranking) ranking, rankings.rank_date, driver_yearly_rankings.position
-	FROM rankings
-		JOIN top_yearly_rankings ON strftime('%Y', rankings.rank_date) = top_yearly_rankings.date AND rankings.ranking = top_yearly_rankings.peak
-		JOIN drivers ON rankings._driver = drivers.id
-		JOIN driver_yearly_rankings ON rankings._driver = driver_yearly_rankings._driver AND top_yearly_rankings.date = driver_yearly_rankings.date;
+CREATE VIEW elo_f1_view_top_peak_rankings AS
+    SELECT elo_f1_view_top_yearly_rankings.date, elo_f1_drivers.driver, elo_f1_rankings.ranking, elo_f1_rankings.rank_date, elo_f1_view_driver_yearly_rankings.position
+    FROM elo_f1_rankings
+        JOIN elo_f1_view_top_yearly_rankings ON strftime('%Y', elo_f1_rankings.rank_date) = elo_f1_view_top_yearly_rankings.date AND elo_f1_rankings.ranking = elo_f1_view_top_yearly_rankings.peak
+        JOIN elo_f1_drivers ON elo_f1_rankings._driver = elo_f1_drivers.id
+        JOIN elo_f1_view_driver_yearly_rankings ON elo_f1_rankings._driver = elo_f1_view_driver_yearly_rankings._driver AND elo_f1_view_top_yearly_rankings.date = elo_f1_view_driver_yearly_rankings.date;
 
-DROP VIEW IF EXISTS drivers_average_score;
 
-CREATE VIEW drivers_average_score AS
-	SELECT printf("%.2f", AVG(ranking)) as drivers_score, drivers.driver
-	FROM rankings
-		JOIN drivers on drivers.id = rankings._driver
-	GROUP BY drivers.driver
+DROP VIEW IF EXISTS elo_f1_view_drivers_average_score;
+
+CREATE VIEW elo_f1_view_drivers_average_score AS
+    SELECT FORMAT(AVG(elo_f1_rankings.ranking), 2) as drivers_score, elo_f1_drivers.driver
+    FROM elo_f1_rankings
+        JOIN elo_f1_drivers on elo_f1_drivers.id = elo_f1_rankings._driver
+    GROUP BY elo_f1_drivers.driver
