@@ -76595,24 +76595,78 @@ Average rating change:  4.0595
 #44 (<Lewis Hamilton (#1140)>) 1[1] 2634.03 2652.16
 #33 (<Max Verstappen (#1172)>) 2[2] 2584.79 2586.27
 #77 (<Valtteri Bottas (#1161)>) 3[2] 2462.45 2488.12
-#18 (<Lance Stroll (#1181)>) 4[3] 2282.05 2210.52
-#11 (<Sergio Pérez (#1155)>) 5[3] 2198.63 2160.7
-#55 (<Carlos Sainz (#1170)>) 6[3] 2123.83 2119.01
-#5 (<Sebastian Vettel (#1135)>) 7[3] 2144.94 2130.61
-#23 (<Alexander Albon (#1187)>) 8[3] 2351.5 2255.86
-#10 (<Pierre Gasly (#1182)>) 9[3] 2154.78 2136.05
-#4 (<Lando Norris (#1186)>) 10[3] 2298.23 2220.74
-#3 (<Daniel Ricciardo (#1157)>) 11[3] 2132.75 2123.9
-#26 (<Daniil Kvyat (#1166)>) 12[3] 2152.23 2134.63
-#31 (<Esteban Ocon (#1179)>) 13[3] 2201.04 2162.08
-#7 (<Kimi Räikkönen (#1141)>) 14[3] 1976.59 2067.34
-#20 (<Kevin Magnussen (#1165)>) 15[3] 1982.46 2070.16
-#99 (<Antonio Giovinazzi (#1180)>) 16[3] 2000.04 2050.17
-#63 (<George Russell (#1188)>) 17[3] 1985.26 2071.49
-#6 (<Nicholas Latifi (#1189)>) 18[3] 1913.44 2034.23
-#8 (<Romain Grosjean (#1144)>) 19[4] 2002.74 1907.74
+#18 (<Lance Stroll (#1181)>) 4[3] 2282.05 2330.52
+#11 (<Sergio Pérez (#1155)>) 5[3] 2198.63 2280.7
+#55 (<Carlos Sainz (#1170)>) 6[4] 2123.83 2183.01
+#5 (<Sebastian Vettel (#1135)>) 7[4] 2144.94 2194.61
+#23 (<Alexander Albon (#1187)>) 8[4] 2351.5 2319.86
+#10 (<Pierre Gasly (#1182)>) 9[4] 2154.78 2200.05
+#4 (<Lando Norris (#1186)>) 10[4] 2298.23 2284.74
+#3 (<Daniel Ricciardo (#1157)>) 11[5] 2132.75 2079.9
+#26 (<Daniil Kvyat (#1166)>) 12[5] 2152.23 2090.63
+#31 (<Esteban Ocon (#1179)>) 13[5] 2201.04 2118.08
+#7 (<Kimi Räikkönen (#1141)>) 14[5] 1976.59 1995.34
+#20 (<Kevin Magnussen (#1165)>) 15[5] 1982.46 1998.16
+#99 (<Antonio Giovinazzi (#1180)>) 16[5] 2000.04 2006.17
+#63 (<George Russell (#1188)>) 17[5] 1985.26 1999.49
+#6 (<Nicholas Latifi (#1189)>) 18[6] 1913.44 1854.23
+#8 (<Romain Grosjean (#1144)>) 19[6] 2002.74 1919.74
 #16 (<Charles Leclerc (#1184)>) R[0] 2339.75 2339.75
 
 Podium rating:  7681.27 7726.55
 Average rating:  2196.0765
-Average rating change:  50.6189473684
+Average rating change:  40.5
+
+2020 Belgian Grand Prix - qualifying (2020-08-29)
+
+#44 (<Lewis Hamilton (#1140)>) 1[1] 2652.16 2653.94
+#77 (<Valtteri Bottas (#1161)>) 2[2] 2488.12 2491.43
+#33 (<Max Verstappen (#1172)>) 3[3] 2586.27 2585.91
+#3 (<Daniel Ricciardo (#1157)>) 4[4] 2079.9 2095.72
+#23 (<Alexander Albon (#1187)>) 5[5] 2319.86 2323.59
+#31 (<Esteban Ocon (#1179)>) 6[6] 2118.08 2128.93
+#55 (<Carlos Sainz (#1170)>) 7[7] 2183.01 2189.27
+#11 (<Sergio Pérez (#1155)>) 8[8] 2280.7 2281.16
+#18 (<Lance Stroll (#1181)>) 9[9] 2330.52 2327.46
+#4 (<Lando Norris (#1186)>) 10[10] 2284.74 2281.84
+#26 (<Daniil Kvyat (#1166)>) 11[11] 2090.63 2094.75
+#10 (<Pierre Gasly (#1182)>) 12[12] 2200.05 2197.55
+#16 (<Charles Leclerc (#1184)>) 13[13] 2339.75 2329.95
+#5 (<Sebastian Vettel (#1135)>) 14[14] 2194.61 2189.15
+#63 (<George Russell (#1188)>) 15[15] 1999.49 1999.76
+#7 (<Kimi Räikkönen (#1141)>) 16[16] 1995.34 1993.43
+#8 (<Romain Grosjean (#1144)>) 17[17] 1919.74 1919.17
+#99 (<Antonio Giovinazzi (#1180)>) 18[18] 2006.17 2000.53
+#6 (<Nicholas Latifi (#1189)>) 19[19] 1854.23 1851.49
+#20 (<Kevin Magnussen (#1165)>) 20[20] 1998.16 1986.5
+
+Podium rating:  7726.55 7731.28
+Average rating:  2196.0765
+Average rating change:  4.66
+
+2020 Belgian Grand Prix (2020-08-30)
+
+#44 (<Lewis Hamilton (#1140)>) 1[1] 2653.94 2670.97
+#77 (<Valtteri Bottas (#1161)>) 2[2] 2491.43 2513.73
+#33 (<Max Verstappen (#1172)>) 3[2] 2585.91 2589.37
+#3 (<Daniel Ricciardo (#1157)>) 4[3] 2095.72 2180.04
+#31 (<Esteban Ocon (#1179)>) 5[3] 2128.93 2200.07
+#23 (<Alexander Albon (#1187)>) 6[3] 2323.59 2321.43
+#4 (<Lando Norris (#1186)>) 7[3] 2281.84 2294.22
+#10 (<Pierre Gasly (#1182)>) 8[3] 2197.55 2241.62
+#18 (<Lance Stroll (#1181)>) 9[3] 2327.46 2324.0
+#11 (<Sergio Pérez (#1155)>) 10[3] 2281.16 2293.79
+#26 (<Daniil Kvyat (#1166)>) 11[4] 2094.75 2051.45
+#7 (<Kimi Räikkönen (#1141)>) 12[4] 1993.43 1991.47
+#5 (<Sebastian Vettel (#1135)>) 13[4] 2189.15 2108.49
+#16 (<Charles Leclerc (#1184)>) 14[4] 2329.95 2197.66
+#8 (<Romain Grosjean (#1144)>) 15[4] 1919.17 1948.69
+#6 (<Nicholas Latifi (#1189)>) 16[4] 1851.49 1904.37
+#20 (<Kevin Magnussen (#1165)>) 17[4] 1986.5 1987.71
+#63 (<George Russell (#1188)>) R[0] 1999.76 1999.76
+#55 (<Carlos Sainz (#1170)>) W[0] 2189.27 2189.27
+#99 (<Antonio Giovinazzi (#1180)>) R[5] 2000.53 1913.43
+
+Podium rating:  7731.28 7774.07
+Average rating:  2196.0765
+Average rating change:  38.9927777778

@@ -15,8 +15,9 @@ INSERT INTO `elo_f1_races` VALUES(2691, '2020 70th Anniversary Grand Prix - qual
 INSERT INTO `elo_f1_races` VALUES(2692, '2020 70th Anniversary Grand Prix', '2020-08-09', 0, 4);
 INSERT INTO `elo_f1_races` VALUES(2693, '2020 Spanish Grand Prix - qualifying', '2020-08-15', 0, 3);
 INSERT INTO `elo_f1_races` VALUES(2694, '2020 Spanish Grand Prix', '2020-08-16', 0, 4)
--- INSERT INTO `elo_f1_races` VALUES(2695, '2020 Belgian Grand Prix - qualifying', '2020-08-29', 0, 3);
--- INSERT INTO `elo_f1_races` VALUES(2696, '2020 Belgian Grand Prix', '2020-08-30', 0, 4)
+INSERT INTO `elo_f1_races` VALUES(2695, '2020 Belgian Grand Prix - qualifying', '2020-08-29', 0, 3);
+INSERT INTO `elo_f1_races` VALUES(2696, '2020 Belgian Grand Prix', '2020-08-30', 0, 4)
+
 -- INSERT INTO `elo_f1_races` VALUES(2697, '2020 Italian Grand Prix - qualifying', '2020-09-05', 0, 3);
 -- INSERT INTO `elo_f1_races` VALUES(2698, '2020 Italian Grand Prix', '2020-09-06', 0, 4)
 -- INSERT INTO `elo_f1_races` VALUES(2699, '2020 Tuscan Grand Prix - qualifying',  '2020-09-12', 0, 3);
@@ -67,6 +68,7 @@ INSERT INTO `elo_f1_drivers` VALUES(1187, 'Alexander Albon', 7);
 INSERT INTO `elo_f1_drivers` VALUES(1188, 'George Russell', 4);
 INSERT INTO `elo_f1_drivers` VALUES(1189, 'Nicholas Latifi', 24);
 
+-- 2020 Austrian Grand Prix
 INSERT INTO `elo_f1_entries` VALUES(57523, '1', 77, 1, 2683);
 INSERT INTO `elo_f1_entries` VALUES(57524, '2', 44, 2, 2683);
 INSERT INTO `elo_f1_entries` VALUES(57525, '3', 33, 3, 2683);
@@ -107,6 +109,7 @@ INSERT INTO `elo_f1_entries` VALUES(57559, 'R', 20, 0, 2684);
 INSERT INTO `elo_f1_entries` VALUES(57560, 'R', 18, 0, 2684);
 INSERT INTO `elo_f1_entries` VALUES(57561, 'R', 3, 0, 2684);
 INSERT INTO `elo_f1_entries` VALUES(57562, 'R', 33, 0, 2684);
+-- 2020 Styrian Grand Prix
 INSERT INTO `elo_f1_entries` VALUES(57563, '1', 44, 1, 2685);
 INSERT INTO `elo_f1_entries` VALUES(57564, '2', 33, 2, 2685);
 INSERT INTO `elo_f1_entries` VALUES(57565, '3', 55, 3, 2685);
@@ -147,6 +150,7 @@ INSERT INTO `elo_f1_entries` VALUES(57599, '17', 6, 6, 2686);
 INSERT INTO `elo_f1_entries` VALUES(57600, 'R', 31, 0, 2686);
 INSERT INTO `elo_f1_entries` VALUES(57601, 'R', 16, 7, 2686);
 INSERT INTO `elo_f1_entries` VALUES(57602, 'R', 5, 7, 2686);
+-- 2020 Hungarian Grand Prix
 INSERT INTO `elo_f1_entries` VALUES(57603, '1', 44, 1, 2687);
 INSERT INTO `elo_f1_entries` VALUES(57604, '2', 77, 2, 2687);
 INSERT INTO `elo_f1_entries` VALUES(57605, '3', 18, 3, 2687);
@@ -290,29 +294,70 @@ INSERT INTO `elo_f1_entries` VALUES(57739, "17", 8, 17, 2693);
 INSERT INTO `elo_f1_entries` VALUES(57740, "18", 63, 18, 2693);
 INSERT INTO `elo_f1_entries` VALUES(57741, "19", 6, 19, 2693);
 INSERT INTO `elo_f1_entries` VALUES(57742, "20", 99, 20, 2693);
-
 INSERT INTO `elo_f1_entries` VALUES(57743, "1", 44, 1, 2694);
 INSERT INTO `elo_f1_entries` VALUES(57744, "2", 33, 2, 2694);
 INSERT INTO `elo_f1_entries` VALUES(57745, "3", 77, 2, 2694);
 INSERT INTO `elo_f1_entries` VALUES(57746, "4", 18, 3, 2694);
 INSERT INTO `elo_f1_entries` VALUES(57747, "5", 11, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57748, "6", 55, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57749, "7", 5, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57750, "8", 23, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57751, "9", 10, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57752, "10", 4, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57753, "11", 3, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57754, "12", 26, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57755, "13", 31, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57756, "14", 7, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57757, "15", 20, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57758, "16", 99, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57759, "17", 63, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57760, "18", 6, 3, 2694);
-INSERT INTO `elo_f1_entries` VALUES(57761, "19", 8, 4, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57748, "6", 55, 4, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57749, "7", 5, 4, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57750, "8", 23,4, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57751, "9", 10, 4, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57752, "10", 4, 4, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57753, "11", 3, 5, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57754, "12", 26, 5, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57755, "13", 31, 5, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57756, "14", 7, 5, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57757, "15", 20, 5, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57758, "16", 99, 5, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57759, "17", 63, 5, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57760, "18", 6, 6, 2694);
+INSERT INTO `elo_f1_entries` VALUES(57761, "19", 8, 6, 2694);
 INSERT INTO `elo_f1_entries` VALUES(57762, "R", 16, 0, 2694);
+-- 2020 Belgian Grand Prix
+INSERT INTO `elo_f1_entries` VALUES(57763, "1", 44, 1, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57764, "2", 77, 2, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57765, "3", 33, 3, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57766, "4", 3, 4, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57767, "5", 23, 5, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57768, "6", 31, 6, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57769, "7", 55, 7, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57770, "8", 11, 8, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57771, "9", 18, 9, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57772, "10", 4, 10, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57773, "11", 26, 11, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57774, "12", 10, 12, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57775, "13", 16, 13, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57776, "14", 5, 14, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57777, "15", 63, 15, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57778, "16", 7, 16, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57779, "17", 8, 17, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57780, "18", 99, 18, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57781, "19", 6, 19, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57782, "20", 20, 20, 2695);
+INSERT INTO `elo_f1_entries` VALUES(57783, "1", 44, 1, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57784, "2", 77, 2, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57785, "3", 33, 2, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57786, "4", 3, 3, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57787, "5", 31, 3, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57788, "6", 23, 3, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57789, "7", 4, 3, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57790, "8", 10, 3, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57791, "9", 18, 3, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57792, "10", 11, 3, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57793, "11", 26, 4, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57794, "12", 7, 4, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57795, "13", 5, 4, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57796, "14", 16, 4, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57797, "15", 8, 4, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57798, "16", 6, 4, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57799, "17", 20, 4, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57800, "R", 99, 5, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57801, "R", 63, 0, 2696);
+INSERT INTO `elo_f1_entries` VALUES(57802, "W", 55, 0, 2696);
 
 
+-- 2020 Austrian Grand Prix
 INSERT INTO `elo_f1_driver_entries` VALUES(1161, 57523, 57662);
 INSERT INTO `elo_f1_driver_entries` VALUES(1140, 57524, 57663);
 INSERT INTO `elo_f1_driver_entries` VALUES(1172, 57525, 57664);
@@ -353,6 +398,7 @@ INSERT INTO `elo_f1_driver_entries` VALUES(1165, 57559, 57698);
 INSERT INTO `elo_f1_driver_entries` VALUES(1181, 57560, 57699);
 INSERT INTO `elo_f1_driver_entries` VALUES(1157, 57561, 57700);
 INSERT INTO `elo_f1_driver_entries` VALUES(1172, 57562, 57701);
+-- 2020 Styrian Grand Prix
 INSERT INTO `elo_f1_driver_entries` VALUES(1140, 57563, 57702);
 INSERT INTO `elo_f1_driver_entries` VALUES(1172, 57564, 57703);
 INSERT INTO `elo_f1_driver_entries` VALUES(1170, 57565, 57704);
@@ -393,6 +439,7 @@ INSERT INTO `elo_f1_driver_entries` VALUES(1189, 57599, 57738);
 INSERT INTO `elo_f1_driver_entries` VALUES(1179, 57600, 57739);
 INSERT INTO `elo_f1_driver_entries` VALUES(1184, 57601, 57740);
 INSERT INTO `elo_f1_driver_entries` VALUES(1135, 57602, 57741);
+-- 2020 Hungarian Grand Prix
 INSERT INTO `elo_f1_driver_entries` VALUES(1140, 57603, 57742);
 INSERT INTO `elo_f1_driver_entries` VALUES(1161, 57604, 57743);
 INSERT INTO `elo_f1_driver_entries` VALUES(1181, 57605, 57744);
@@ -556,3 +603,44 @@ INSERT INTO `elo_f1_driver_entries` VALUES(1188, 57759, 57898);
 INSERT INTO `elo_f1_driver_entries` VALUES(1189, 57760, 57899);
 INSERT INTO `elo_f1_driver_entries` VALUES(1144, 57761, 57900);
 INSERT INTO `elo_f1_driver_entries` VALUES(1184, 57762, 57901);
+-- 2020 Belgian Grand Prix
+INSERT INTO `elo_f1_driver_entries` VALUES(1140, 57763, 57902);
+INSERT INTO `elo_f1_driver_entries` VALUES(1161, 57764, 57903);
+INSERT INTO `elo_f1_driver_entries` VALUES(1172, 57765, 57904);
+INSERT INTO `elo_f1_driver_entries` VALUES(1157, 57766, 57905);
+INSERT INTO `elo_f1_driver_entries` VALUES(1187, 57767, 57906);
+INSERT INTO `elo_f1_driver_entries` VALUES(1179, 57768, 57907);
+INSERT INTO `elo_f1_driver_entries` VALUES(1170, 57769, 57908);
+INSERT INTO `elo_f1_driver_entries` VALUES(1155, 57770, 57909);
+INSERT INTO `elo_f1_driver_entries` VALUES(1181, 57771, 57910);
+INSERT INTO `elo_f1_driver_entries` VALUES(1186, 57772, 57911);
+INSERT INTO `elo_f1_driver_entries` VALUES(1166, 57773, 57912);
+INSERT INTO `elo_f1_driver_entries` VALUES(1182, 57774, 57913);
+INSERT INTO `elo_f1_driver_entries` VALUES(1184, 57775, 57914);
+INSERT INTO `elo_f1_driver_entries` VALUES(1135, 57776, 57915);
+INSERT INTO `elo_f1_driver_entries` VALUES(1188, 57777, 57916);
+INSERT INTO `elo_f1_driver_entries` VALUES(1141, 57778, 57917);
+INSERT INTO `elo_f1_driver_entries` VALUES(1144, 57779, 57918);
+INSERT INTO `elo_f1_driver_entries` VALUES(1180, 57780, 57919);
+INSERT INTO `elo_f1_driver_entries` VALUES(1189, 57781, 57920);
+INSERT INTO `elo_f1_driver_entries` VALUES(1165, 57782, 57921);
+INSERT INTO `elo_f1_driver_entries` VALUES(1140, 57783, 57922);
+INSERT INTO `elo_f1_driver_entries` VALUES(1161, 57784, 57923);
+INSERT INTO `elo_f1_driver_entries` VALUES(1172, 57785, 57924);
+INSERT INTO `elo_f1_driver_entries` VALUES(1157, 57786, 57925);
+INSERT INTO `elo_f1_driver_entries` VALUES(1179, 57787, 57926);
+INSERT INTO `elo_f1_driver_entries` VALUES(1187, 57788, 57927);
+INSERT INTO `elo_f1_driver_entries` VALUES(1186, 57789, 57928);
+INSERT INTO `elo_f1_driver_entries` VALUES(1182, 57790, 57929);
+INSERT INTO `elo_f1_driver_entries` VALUES(1181, 57791, 57930);
+INSERT INTO `elo_f1_driver_entries` VALUES(1155, 57792, 57931);
+INSERT INTO `elo_f1_driver_entries` VALUES(1166, 57793, 57932);
+INSERT INTO `elo_f1_driver_entries` VALUES(1141, 57794, 57933);
+INSERT INTO `elo_f1_driver_entries` VALUES(1135, 57795, 57934);
+INSERT INTO `elo_f1_driver_entries` VALUES(1184, 57796, 57935);
+INSERT INTO `elo_f1_driver_entries` VALUES(1144, 57797, 57936);
+INSERT INTO `elo_f1_driver_entries` VALUES(1189, 57798, 57937);
+INSERT INTO `elo_f1_driver_entries` VALUES(1165, 57799, 57938);
+INSERT INTO `elo_f1_driver_entries` VALUES(1180, 57800, 57939);
+INSERT INTO `elo_f1_driver_entries` VALUES(1188, 57801, 57940);
+INSERT INTO `elo_f1_driver_entries` VALUES(1170, 57802, 57941);
